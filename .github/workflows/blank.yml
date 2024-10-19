@@ -27,7 +27,7 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://mysql:8.0.18 docker://registry.cn-hangzhou.aliyuncs.com/xu247/mysql:8.0.18
-         skopeo copy docker://nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/xu247/nginx:latest
-         skopeo copy docker://httpd:latest docker://registry.cn-hangzhou.aliyuncs.com/xu247/httpd:latest
+         skopeo copy docker://nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/xu247/nginx:1.0
+         skopeo copy docker://httpd:latest docker://registry.cn-hangzhou.aliyuncs.com/xu247/httpd:1.0
+         skopeo copy docker://vsftpd:latest docker://registry.cn-hangzhou.aliyuncs.com/xu247/vsftpd:1.0
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
