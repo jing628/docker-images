@@ -29,6 +29,6 @@ jobs:
       run: |
          #skopeo copy docker://nginx:latest docker://registry.cn-hangzhou.aliyuncs.com/xu247/nginx:latest
          #skopeo copy docker://fauria/vsftpd:latest docker://registry.cn-hangzhou.aliyuncs.com/xu247/vsftpd:latest
-         skopeo copy docker://andyshinn/dnsmasq:latest docker://registry.cn-hangzhou.aliyuncs.com/xu247/andyshinn/dnsmasq9:latest
+         skopeo copy docker://internetworks/bind9:latest docker://registry.cn-hangzhou.aliyuncs.com/xu247/internetworks/bind9:latest
          #skopeo copy docker://sameersbn/bind:latest docker://registry.cn-hangzhou.aliyuncs.com/xu247/sameersbn/bind:latest
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
